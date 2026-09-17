@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart } from 'lucide-react'
+import { Github, Linkedin, Mail } from 'lucide-react'
 import { siteConfig } from '../data/site'
 
 export default function Footer() {
@@ -41,12 +41,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-6 pt-6 border-t border-border/30 flex flex-col sm:flex-row items-center justify-between gap-2">
+        <div className="mt-6 pt-6 border-t border-border/30">
           <p className="text-xs text-text-muted">
             © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
-          </p>
-          <p className="text-xs text-text-muted flex items-center gap-1">
-            Built with <Heart size={10} className="text-red-500 fill-red-500" /> & React
           </p>
         </div>
       </div>
